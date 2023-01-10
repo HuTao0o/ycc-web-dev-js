@@ -37,7 +37,12 @@
       myInput.value = '';
     }    
   }
-
+  document.addEventListener('keydown', keycap)
+  function keycap(data) {
+    if (data.keyCode ==13) {
+      addItem()
+    }
+  }
 </script>
 
 </html>
